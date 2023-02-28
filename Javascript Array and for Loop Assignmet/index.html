@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon-32x32 - Copy.png">
+    <title>Javascript Array and for Loop Assignment</title>
+</head>
+<body>
+
+      <h1 id="demo"></h1>
+      <h1 id="demo1"></h1>
+      <h1 id="demo2"></h1>
+      <h1 id="demo3"></h1>
+      <h1 id="demo4"></h1>
+    <script>
+   //  ? question1: Divide the elements in array1 with elements in array2 respectively and store their results in a new array.
+
+    // let array1 = [20, 46, 90, 80, 120];
+    // let array2 = [2, 2, 5, 4, 2];
+
+      let array1 = [20, 46, 90, 80, 120];
+      let array2 = array1.map(myFunction);
+
+      document.getElementById("demo").innerHTML = array2;
+
+      function myFunction(value) {
+        return value / 2;
+      }
+       
+      let array3 = [20, 46, 90, 80, 120];
+      let array4 = array3.map(myFunction1);
+
+      document.getElementById("demo1").innerHTML = array4;
+
+      function myFunction1(value) {
+        return value / 2;
+      }
+     
+      let array5 = [20, 46, 90, 80, 120];
+      let array6 = array5.map(myFunction2);
+
+      document.getElementById("demo2").innerHTML = array6;
+
+      function myFunction2(value) {
+        return value / 5;
+      }
+
+      let array7 = [20, 46, 90, 80, 120];
+      let array8 = array7.map(myFunction3);
+
+      document.getElementById("demo3").innerHTML = array8;
+
+      function myFunction3(value) {
+        return value / 4;
+      }
+
+      let array9 = [20, 46, 90, 80, 120];
+      let array10 = array9.map(myFunction4);
+
+      document.getElementById("demo4").innerHTML = array10;
+
+      function myFunction4(value) {
+        return value / 2;
+      }
+
+
+      // ? Question 2:Multi dimensional Arrays
+        
+     var arr = [[1, 2, 3],[4, 5, 6],7,8,9,[[10, 11, 12, [13, 4, 112]], 136, 14],];
+    // *print out these numbers (10,8,13,136 and 4)from the array provided above using for loop
+       for(var i = 0; i <= 0; i++){
+         console.log(arr[5][0][0]);
+         console.log(arr[3]);
+         console.log(arr[5][0][3][0]);
+         console.log(arr[5][1]);
+         console.log(arr[1][0]);
+        // console.log(arr[5][0][3][0]);
+      }
+
+       
+
+  
+      
+
+    </script>
+
+</body>
+</html>
